@@ -1,7 +1,12 @@
 import React from "react";
 
-function Comment(props) {
-  return <div className="comment">{props.commentText}</div>;
+function Comment({ author, text}) {
+  return (
+  <div>
+    <p>{author}: {text}</p>
+  </div>
+  );
 }
+
 
 export default Comment;
